@@ -1,0 +1,325 @@
+*
+{
+    /* border:1px solid black !important; */
+}
+
+/* Global--------------------- */
+html
+{
+    font-size: 85%;
+}
+:root
+{
+    --blue:royalblue;
+    --gradient: linear-gradient(royalblue,rgb(129, 29, 196));
+}
+
+.blue-bg
+{
+    background-color: var(--blue);
+}
+.bg-gradient
+{
+    background:var(--gradient)!important;
+}
+.sub-heading
+{
+   font-weight: 600;
+   position: relative;
+   color: rgba(51, 51, 51, 0.959);
+}
+.sub-heading::after
+{
+    content: "";
+    display: block;
+    background: linear-gradient(to right,rgba(51, 51, 51, 0.856),rgb(92, 130, 243));
+    position:absolute;
+    width: 50px;
+    height: 5px;
+    border-radius: 100px;
+    bottom: -9px;
+    left: 0px;
+}
+.action-button
+{
+    background: #333;
+    color: whitesmoke;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+.action-button:hover
+{
+    color:whitesmoke;
+    background: rgba(51, 51, 51, 0.822);
+}
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* Admin login from------------- */
+.login-signup form
+{
+  width:100%;
+}
+
+.login-signup .content
+{
+    position: relative;
+}
+
+.login-signup .content img
+{
+    position:absolute;
+    opacity: 0.2;
+    right: 10px;
+    bottom: 18px;
+}
+
+.login-signup .content h1
+{
+    color: whitesmoke;
+    font-size: 2.7rem;
+    font-weight: 700;
+    position:relative;
+    margin-top: -5px;
+    margin-bottom: 1.5rem;
+}
+.login-signup .content h1::after
+{
+    content: "";
+    display: block;
+    background: linear-gradient(to right,rgb(245, 245, 245),rgb(92, 130, 243));
+    position:absolute;
+    width: 70px;
+    height: 5px;
+    border-radius: 100px;
+    bottom: -7px;
+    left: 0;
+}
+
+.login-signup .content small
+{
+    color: whitesmoke;
+    padding-left: 0.5rem;
+}
+
+
+.login-signup form input
+{
+  width:100%;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  background: transparent;
+  color: whitesmoke;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+}
+.login-signup form input:focus
+{
+  outline: none !important;
+}
+.login-signup form button
+{
+  padding: 1rem 2rem;
+  background-color:aqua;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  transition: all 0.5s ease-in-out;
+  font-weight: 600;
+}
+.login-signup form button:hover
+{
+  background-color:whitesmoke;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+
+/* ---Admin header------------------ */
+
+.header .content
+{
+    margin:1.5rem 0;
+    position: relative;
+}
+.header .content img
+{
+    width: 50px;
+}
+.header .content h1
+{
+   font-size: 1.7rem;
+}
+/* -------------------------------------------------------------------------------------------------------= */
+
+/* Admin nav------------------------- */
+.navigation
+{
+    background:transparent;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.164);
+    box-shadow: 3px 0px 15px  rgba(51, 51, 51, 0.185);
+}
+
+.navigation .nav-link
+{
+    color: rgba(51, 51, 51, 0.925) !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border:1px solid transparent;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.navigation .nav-link:hover
+{
+    color: royalblue !important;
+}
+
+
+.navigation .nav-link::before
+{
+    content: "";
+    display: block;
+    position:absolute;
+    width: 0px;
+    height: 3px;
+    left: 5px;
+    bottom: 3px;
+    background: var(--gradient);
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.navigation .nav-link:hover::before
+{
+    width: 25px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+.dashboard-form
+{
+   margin-top: 5rem;
+}
+.dashboard-form .left
+{
+   border-radius: 10px 0 0 10px;
+}
+.dashboard-form .content
+{
+    padding: 1rem 0.5rem;
+}
+
+.dashboard-form form
+{
+    width: 100%;
+}
+
+.dashboard-form form input,select
+{
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.219);
+    font-size: 1.2rem;
+    background: transparent;
+}
+
+.dashboard-form form input:focus
+{
+    outline: none;
+    box-shadow: 3px 3px 5px rgba(51, 51, 51, 0.158);
+}
+
+.dashboard-form form button
+{
+
+    padding: 0.7rem 1rem;
+    border: none;
+    background: var(--blue);
+    color: whitesmoke;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    transition: all 0.5s ease-in-out
+}
+
+.dashboard-form form button:hover
+{
+
+    background: rgba(65, 105, 225, 0.733);
+}
+
+.profile-pic
+{
+    width:100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+    border: 1px solid #333;
+    padding: 0.3rem;
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.288);
+}
+
+
+.profile-img
+{
+    width:60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100px;
+    padding: 0.3rem;
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.288);
+}
+
+
+.profile-img-light
+{
+    border: 1px solid white;
+}
+
+.profile-img-dark
+{
+    border: 1px solid #333;
+}
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* Dashboard table----------- */
+.dashboard-table
+{
+    margin-top: 7rem;
+}
+
+.dashboard-table table
+{
+    width: 100% !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(51, 51, 51, 0.226);
+    font-size: 1.2rem;
+}
+
+.dashboard-table thead
+{
+   background: var(--gradient);
+   color: whitesmoke;
+   border-radius:10px 10px 0 0;
+}
+
+.dashboard-table th,td
+{
+   padding: 1rem;
+}
+
+
+
+
+/* mobile---------------- */
+@media (max-width:600px) 
+{
+    html
+    {
+        font-size: 75% !important;
+    }
+}
