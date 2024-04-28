@@ -3,7 +3,7 @@
  {
     private $user ="root";
     private $pws = "";
-    private $DNS = "mysql:host=localhost;dbname=online_coures_registration";
+    private $DNS = "mysql:host=localhost;dbname=online_course_registration";
     
     public $con = null;
 
